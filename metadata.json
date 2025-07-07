@@ -1,0 +1,6 @@
+{
+  "name": "Interactive Git Guide",
+  "description": "An interactive, step-by-step visual guide to learn the basic Git workflow, based on the classic Git diagram. Perfect for beginners.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
