@@ -2,10 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <!-- The vite.svg favicon was removed as the file does not exist in the project, which causes a 404 error. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interactive Git Guide</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Babel standalone is added to transpile JSX/TSX code directly in the browser. -->
+    <!-- This is necessary because the project uses TSX files without a build step. -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script type="importmap">
 {
   "imports": {
@@ -18,6 +21,9 @@
 </head>
   <body class="bg-slate-900">
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
+    <!-- The script type is changed to "text/babel" and data-type="module" is added. -->
+    <!-- This tells Babel to transpile the file while treating it as an ES module, which is required for 'import' statements to work. -->
+    <!-- The path is kept relative ('./index.tsx') to ensure it works on both local servers and subdirectory deployments. -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
   </body>
 </html>
