@@ -1,7 +1,7 @@
 
 import React, { useState, useCallback } from 'react';
-import { StepInfo, HighlightID } from './types';
-import { STEPS } from './constants';
+import { StepInfo, HighlightID } from './types.ts';
+import { STEPS } from './constants.ts';
 
 const highlightClass = "ring-2 ring-offset-4 ring-offset-slate-900 ring-cyan-400 shadow-lg shadow-cyan-500/50";
 const baseBoxClass = "border-2 rounded-lg p-4 text-center font-semibold transition-all duration-300 w-40 h-20 flex items-center justify-center";

@@ -1,5 +1,5 @@
 
-import { StepInfo, HighlightID } from './types';
+import { StepInfo, HighlightID } from './types.ts';
 
 export const STEPS: StepInfo[] = [
   {
